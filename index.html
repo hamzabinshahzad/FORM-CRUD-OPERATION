@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>User Record</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <form id="registration_form">
+                
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4" id="main-heading">
+                        <h4>USER PERSONAL RECORD</h4>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!-- <div class="col-2">
+                        <label for="fname">First Name:</label>
+                    </div> -->
+                    <div class="col-4 form-item" id="first-input">
+                        <input id="fname" class="field" type="text" name="fname" required placeholder="First Name" maxlength="20"/>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!-- <div class="col-2">
+                        <label for="lname">Last Name:</label>
+                    </div> -->
+                    <div class="col-4 form-item">
+                        <input id="lname" class="field" type="text" name="lname" required placeholder="Last Name" maxlength="20"/>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!-- <div class="col-2">
+                        <label for="age">Age:</label>
+                    </div> -->
+                    <div class="col-4 form-item">
+                        <input id="age" class="field" type="number" name="age" required placeholder="Age" min="0" max="150" />
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4"></div>
+                    <!-- <div class="col-2">
+                        <label for="email-id">Email ID:</label>
+                    </div> -->
+                    <div class="col-4 form-item">
+                        <input id="email-id" class="field" type="email" name="email" required placeholder="E-mail Address" maxlength="254" />
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                
+                <!-- <label for="phone">Phone Number:</label> -->
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4 form-item">
+                        <input id="phone" class="field" type="tel" name="phone" required placeholder="Phone Number" maxlength="13"/>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4 form-item" id="last-item">
+                        <input class="btn btn-outline-success" id="submit-button" type="submit" value="ADD USER RECORD" onclick="submitData()" />
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+
+                
+            </form>
+            </div>
+        </div>
+
+        
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-12"> -->
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <table id="records_table">
+                            <tr id="heading_row">
+                                <th class="user-id">ID</th>
+                                <th style="min-width: 100px; max-width: 100px;">FIRST NAME</th>
+                                <th style="min-width: 100px; max-width: 100px;">LAST NAME</th>
+                                <th style="min-width: 30px; max-width: 30px;">AGE</th>
+                                <th style="min-width: 200px; max-width: 200px;">EMAIL ADDRESS</th>
+                                <th style="min-width: 60px; max-width: 60px;">PHONE NUMBER</th>
+                                <th class="th-button"></th>
+                                <th class="th-button"></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <!-- </div>
+            </div>
+        </div>     -->
+        
+    
+    </div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
