@@ -107,6 +107,9 @@ class changeVisuals {
 var newID = 0;
 var userID; // Not initialized because will use undefined as indicator to either insert or update.
 let visuals = new changeVisuals();
+visuals.setColorPrimary = "#ffc107";
+visuals.setBorderColorPrimary = "#ffc107";
+visuals.setButtonPrimary = "btn-outline-warning";
 
 
 let submitData = function() {
